@@ -1,0 +1,129 @@
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Anime Hive</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="images/Websitelogo.png" alt="logo"></div>
+        <ul>
+            <li><a class="active" href="Home.html">Home</a></li>
+            <li><a href="https://whatsappweb.com">Chatroom</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Signin.html">Sign in</a></li>
+            <li><a href="/Report.html">Report</a></li>
+        </ul>
+        <div class="srch"><input type="text" class="search" placeholder="Search Anime Show"><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+        <a class="get-started" href="/Signup.html">Sign Up</a>
+        <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+    </nav>
+	<div class="head-container">
+		<div class="quote">
+			<p>Welcome to Anime Hive</p>
+			<h5>where you can escape reality and immerse yourself in a world of fantasy.</h5>
+			
+		</div>
+		<div class="svg-image">
+			<img src="images/bg1.jpg" alt="svg">
+		</div>
+	</div>
+	<div class="side-menu" id="side-menu">
+		<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+		<div class="user">
+			<img src="images/AOD 1.jpeg" alt="Username">
+			<p>ICT Students</p>
+		</div>
+		<ul>
+			<li><a class="active" href="Home.html">Home</a></li>
+            <li><a href="https://whatsappweb.com">Chatroom</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Signin.html">Sign in</a></li>
+            <li><a href="/Report.html">Report</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br><br> <br>
+	<div class="title">
+		<span>Our Services</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="#end"><img src="images/courses/book.png">News Aggregator</a></div>
+		
+		
+		
+		<div class="cbox">
+		<div class="det"><a href="/Home.html"><img src="images/courses/computer.png">Anime Search Engine</a></div>
+		
+		<div class="det"><a href="/Signup.html"><img src="images/courses/algo.png">Community</a></div>
+		
+		</div>
+	</div>
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+	
+	<div class="feedbox">
+		<div class="feed">
+			<form action="alixhah5502625@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/Websitelogo.png" style="width: 200px;">
+				<div class="logo"></div> <br>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Air University<br>Islamabad</p><br>
+				<p><img src="images/icon/phone.png"> +923045502625<br><img src="images/icon/mail.png">&nbsp; 232966@students.au.edu.pk</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our News Service</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get Anime New and Updates .</p>
+				<form class="newsletter-form" id="end">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
